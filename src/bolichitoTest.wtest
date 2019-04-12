@@ -31,6 +31,14 @@ test "El bolichito es monocromático si tiene una remera y una placa roja" {
 	assert.that(bolichito.esMonocromatico())
 }
 
+test "La remera es roja" {
+	assert.that(remera.color() == rojo)
+}
+
+test "La placa es roja" {
+	assert.that(placa.color() == rojo)
+}
+
 test "El bolichito no es monocromático si tiene una remera y una pelota" {
 	bolichito.ponerEnMostrador(remera)
 	bolichito.ponerEnVidriera(pelota)
